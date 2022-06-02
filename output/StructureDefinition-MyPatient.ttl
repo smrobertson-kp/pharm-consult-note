@@ -25,7 +25,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "MyPatient"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-06-01T16:39:51-07:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-06-02T15:57:08-07:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "NCPDP/HL7"];
   fhir:StructureDefinition.description [ fhir:value "An example profile of the Patient resource."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];

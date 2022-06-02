@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "pharmconsultnote"];
   fhir:ImplementationGuide.title [ fhir:value "Pharmacist Consultation Note"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-06-01T16:39:51-07:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-06-02T15:57:08-07:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "NCPDP/HL7"];
   fhir:ImplementationGuide.description [ fhir:value "Constraints"];
   fhir:ImplementationGuide.packageId [ fhir:value "pharm-consult-note"];
@@ -342,6 +342,11 @@
          fhir:index 0;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "use-cases.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Cases" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];

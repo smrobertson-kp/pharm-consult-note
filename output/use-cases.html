@@ -1,11 +1,9 @@
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>PHARM-CONSULT-NOTE\PatientExample - TTL Representation - FHIR v4.0.1</title>
+    <title>PHARM-CONSULT-NOTE\Use Cases - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.2"}
-    h3,h4,h5,h6{--heading-prefix:"3.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -99,7 +97,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>PatientExample</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Use Cases</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -111,114 +109,43 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Pharmacist Consultation Note - Local Development build (v0.1.0). See the <a href="http://github.com/HL7/pharm-consult-note/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-
-
-
-
-
-
-
-
-
-<ul class="nav nav-tabs">
-
-  <li>
-    <a href="Patient-PatientExample.html">Narrative Content</a>
-  </li>
-
-
-  
-    <li>
-      <a href="Patient-PatientExample.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="Patient-PatientExample.json.html">JSON</a>
-    </li>
-  
-
-
-  
-    <li class="active">
-      <a href="#">TTL</a>
-    </li>
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Pharmacist Consultation Note - Local Development build (v0.1.0). See the <a href="http://github.com/HL7/pharm-consult-note/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Use Cases</h2>
   
 
 
 
-</ul>
-
-
-<a name="root"> </a>
-
-
-<h2 id="root">: PatientExample - TTL Representation</h2>
-  <table class="colsi">
-    <tr>
-
-      <td colspan="2">
-        
-          
-          
-        
-      </td>
-
-    </tr>
-  </table>
-
-
-<p><a href="Patient-PatientExample.ttl" no-download="true">Raw ttl</a> | <a href="Patient-PatientExample.ttl" download>Download</a></p>
-
-  <!-- insert intro if present -->
-  
 
 
 
-  <pre class="rdf"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:Patient;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;PatientExample&quot;];
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">fhir:Resource.meta</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://github.com/HL7/pharm-consult-note/StructureDefinition/MyPatient&quot;;
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://github.com/HL7/pharm-consult-note/StructureDefinition/MyPatient&gt;     ]
-  ];
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;James Pond &lt;/b&gt; (no stated gender), DoB Unknown&lt;/p&gt;&lt;/div&gt;&quot;
-  ];
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.name">fhir:Patient.name</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">fhir:HumanName.family</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Pond&quot; ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">fhir:HumanName.given</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;James&quot;;
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0     ]
-  ].
-
-# - ontology header ------------------------------------------------------------
-
- a owl:Ontology;
-  owl:imports fhir:fhir.ttl.
-
-</code></pre>
 
 
 
-  <!-- insert notes if present -->
-  
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>The consultant pharmacist role is critical to the management of patients in long term care settings by providing clinical review and medication reconciliation upon admission/readmission/discharge. The consultant pharmacist provides a monthly regimen review of the efficacy and appropriateness of the medications and the overall treatment plan. They serve as a bridge between the facility medical staff (nursing and physician) and the pharmacy. The following use cases demonstrate examples of consultant pharmacist’s activities and clinical documentation.</p>
+
+<h3 id="use-case-1---pharmacists-monthly-snf-visit">Use Case 1 - Pharmacist’s Monthly SNF Visit</h3>
+
+<p>The consultant pharmacist during the monthly visit to the Skilled Nursing Facility (SNF) reviews the patient’s chart of an 85 year old female with diagnosis of psychosis and performs an MRR noting the resident is on Seroquel 50mg at bedtime. The consultant pharmacist reviews the notes for targeted behavior and observes the patient is showing signs of oversedation. The consultant pharmacist writes a recommendation to the prescriber to reduce the Seroquel dose to 25mg at bedtime and continue to monitor for side effects. (Recommendation is “dose reduction”, reported using Systematized Nomenclature of Medicine [SNOMED CT] Code.)</p>
+
+<p><img src="UseCase1Workflow.png" alt="Use case 1 workflow" title="Use Case 1 Workflow" /></p>
+
+<p>The consultant pharmacist captures information from the patient’s chart, or if electronic, the facility’s Electronic Health Record (EHR)/Electronic Medical Record (EMR) (e.g., medication orders, lab orders, progress notes, medication administration record, or targeted facility report). This information is entered or transported into the consultant pharmacist’s software. The consultant pharmacist generates the Consult Note, which is sent to the physician and/or nursing facility’s system. The physician responds by accepting or rejecting with comments using a response Consult Note. The responses to the recommendations are tracked in the consultant pharmacist software. As a result of the consult note exchange, the information is available for outcomes reporting.</p>
+
 
 
 

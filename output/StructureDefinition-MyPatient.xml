@@ -17,7 +17,7 @@
   <version value="0.1.0"/>
   <name value="MyPatient"/>
   <status value="active"/>
-  <date value="2022-06-01T16:39:51-07:00"/>
+  <date value="2022-06-02T15:57:08-07:00"/>
   <publisher value="NCPDP/HL7"/>
   <description value="An example profile of the Patient resource."/>
   <fhirVersion value="4.0.1"/>

@@ -10,7 +10,7 @@
   "name": "pharmconsultnote",
   "title": "Pharmacist Consultation Note",
   "status": "draft",
-  "date": "2022-06-01T16:39:51-07:00",
+  "date": "2022-06-02T15:57:08-07:00",
   "publisher": "NCPDP/HL7",
   "description": "Constraints",
   "packageId": "pharm-consult-note",
@@ -353,6 +353,11 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "use-cases.html",
+          "title": "Use Cases",
           "generation": "markdown"
         }
       ]

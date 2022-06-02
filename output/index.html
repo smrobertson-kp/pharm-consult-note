@@ -80,6 +80,9 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="use-cases.html">Use Cases</a>
+  </li>
+  <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
 </ul>
@@ -145,7 +148,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2022-06-01
+            as of 2022-06-02
           
         
       </td>
@@ -169,12 +172,81 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-<h1 id="pharm-consult-note">pharm-consult-note</h1>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+  <li><a href="#audience" id="markdown-toc-audience">Audience</a></li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+</ul>
 
-<p>Feel free to modify this index page with your own awesome content!</p>
+</div>
+<h3 id="purpose">Purpose</h3>
+
+<p>The scope of this implementation guide is to provide IG to the pharmacy sector of the healthcare industry on the use of the <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=408">HL7 Implementation Guide for CDA® Release 2: Consolidated CDA Templates for Clinical Notes (US Realm) Standard for Trial Use Release 2.1</a> (C-CDA Template) and <a href="http://www.hl7.org/fhir/us/ccda/StructureDefinition-Consultation-Note.html">C-CDA on FHIR 1.1.0 - (FHIR R4) STU Release 1.1 Consultation Note Profile</a> (FHIR Profile) in creating a Pharmacist Consultation Note. The Pharmacist Consultation Note is used for exchange of the pharmacist’s recommendations with the appropriate long term post acute care (LTPAC) facility staff and the physician(s) of record for the patient. This paper is based on the C-CDA Template and FHIR Profile.</p>
+
+<p>This IG is intended to be used in conjunction with the specifications as defined in the C-CDA Template and FHIR Profile. The NCPDP Long Term and Post Acute Care (LTPAC) Work Group (WG14) Consultant Pharmacist Interoperability Task Group has reviewed the C-CDA templates and FHIR Profile; and found the content and functionality of the C-CDA Template and FHIR Profile meet the requirements of the structured documentation of the Consultant Pharmacist’s Consultation Note. The C-CDA Template and FHIR Profile provide information regarding levels of constraint, conformance statements, conformance verbs, cardinality, vocabulary conformance, and null flavor that are pertinent to this IG.</p>
+
+<p>Matters such as the maintenance and storage of medication and storage equipment (e.g., refrigeration, humidity and temperature control, etc.), medication security and access protocols, etc., are not within the scope of this IG document.</p>
+
+<h3 id="audience">Audience</h3>
+
+<p>The audience for this recommendation for use of this IG document is the architects, developers and implementers of HIT systems in the US Realm to meet health IT certification requirements for exchange of patient clinical data particularly among pharmacists, LTPAC facilities as well as other healthcare providers, and caregivers. All participants in the healthcare team will benefit from the implementation of these recommendations.</p>
+
+<h3 id="overview">Overview</h3>
+
+<p>Consultant pharmacists play a pivotal role in the long term and post-acute care arena in helping patients/residents attain and maintain the highest practicable level of functional status and preventing or minimizing medication-related adverse consequences. For the purpose of this IG document, the term patient will be used when referring to residents of LTPAC facilities. The consultant pharmacist’s primary focus is the nursing home population, which may be quite diverse, including geriatric patients as well as individuals of any age with special needs, such as those who are immunocompromised, have end stage renal disease, spinal cord or closed head injuries, neurological syndromes, etc. These patients tend to have multiple risk factors including medication-related adverse consequences. Although the intent of this IG document is for consultant pharmacist in the LTC setting, this can also be applied to other care settings (e.g., medical at home, assisted living, home health care).</p>
+
+<p>Medications are used for their therapeutic benefits in diagnosing, managing, and treating acute and/or chronic conditions, as well as for maintaining and/or improving a patient’s functional status. Information about indications for use, potential medication irregularities or adverse consequences (such as symptoms of tardive dyskinesia, dizziness, anorexia, or falls) may be attainable only by talking to the staff, reviewing the medical record, and observing and speaking with the patient. However, electronic health and medication records and other available technology may permit the pharmacist to conduct some components of the review from outside the facility.</p>
+
+<p>The following information in this overview references the <a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/downloads/SOM107ap_pp_Guidelines_ltcf.pdf">Centers for Medicare and Medicaid Services (CMS) State Operations Manual Appendix PP - Guidance to Surveyors for Long Term Care Facilities Transmittals for Appendix PP, Revision 173, November 22, 2017</a>. The <a href="https://www.cms.gov">cms.gov</a> website should be consulted for any updates to regulatory requirements.</p>
+
+<p>The pharmacist must review each patient’s medication regimen at least monthly in order to identify irregularities as well as clinically significant risks and/or adverse consequences resulting from or associated with medications. The requirement for the medication regimen review (MRR) applies to each patient, including patients who:</p>
+
+<ol>
+  <li>Are receiving respite care;</li>
+  <li>Are at the end of life or have elected the hospice benefit and are receiving respite care;</li>
+  <li>Have an anticipated stay of less than 30 days; or</li>
+  <li>Have experienced a change in condition.</li>
+</ol>
+
+<h4 id="notification-of-irregularities-identified-in-the-mrr">Notification of Irregularities Identified in the MRR</h4>
+
+<p>The timeliness of notification of irregularities depends on factors including the potential for or presence of serious adverse consequences; for example, immediate notification is indicated in cases of bleeding in a patient who is receiving anticoagulants or of possible allergic reactions to antibiotic therapy. If no irregularities were identified during the review, the pharmacist includes a signed and dated statement to that effect. The facility and the pharmacist may collaborate to identify the most effective means for assuring appropriate notification. This notification may be done electronically.</p>
+
+<p>The pharmacist does not need to document a continuing irregularity in the report each month if the pharmacist has deemed the irregularity to be clinically insignificant or evidence of a valid clinical reason for rejecting the pharmacist’s recommendation was provided. In this situation, the pharmacist need only reconsider annually whether to report the irregularity again or make a new recommendation.</p>
+
+<p>The intent of this requirement is that each patient’s entire medication regimen be managed and monitored. Monitoring is the ongoing collection and analysis of information (such as observations and diagnostic test results) and comparison to baseline data.</p>
+
+<p>The regulations associated with medication management include consideration of:</p>
+
+<ul>
+  <li>Indications for use of medication (including initiation or continued use of antipsychotic medication);</li>
+  <li>Monitoring for efficacy and adverse consequences;</li>
+  <li>Dose (including duplicate therapy);</li>
+  <li>Duration;</li>
+  <li>Tapering of a medication dose/gradual dose reduction for antipsychotic medications; and,</li>
+  <li>Prevention, identification, and response to adverse consequences.</li>
+</ul>
+
+<h4 id="response-to-irregularities-identified-in-the-mrr">Response to Irregularities Identified in the MRR</h4>
+
+<p>Throughout this IG, a response from a physician regarding a medication problem implies appropriate communication, review, and patient management, but does not imply the physician must necessarily order tests or treatments recommended or requested by the staff, unless the physician determines those are medically valid and indicated. For those issues that require physician intervention, the physician either accepts and acts upon the report and potential recommendations or rejects all or some of the report and provides a brief explanation of why the recommendation is rejected, such as in a dated progress note. It is not acceptable for a physician to document only that he/she disagrees with the report, without providing some basis for disagreement.</p>
+
+<p>If there is potential for serious harm and the attending physician does not concur with or take action on the report, the facility and the pharmacist should contact the facility’s medical director for IG and possible intervention to resolve the issue. In cases where the attending physician is also the medical director, the facility should have alternate procedures in place to resolve the situation. For those recommendations that do not require physician intervention, such as monitoring vital signs or weights, the director of nursing or designated licensed nurse addresses and documents action(s) taken.</p>
+
+<p>The recommendations provided for use of the C-CDA templates and FHIR Profile to construct the Pharmacist Consultation Note are designed to:</p>
+
+<ul>
+  <li>support the consultant patient specific recommendations for LTPAC facilities</li>
+  <li>to meet the regulatory requirements for nursing facilities</li>
+  <li>support LTPAC needs</li>
+  <li>support care coordination</li>
+</ul>
+
+<p>In addition to the stated C-CDA templates and FHIR Profile components, the HL7 process allows for inclusion of other section level and entry level templates, as needed, to fully meet the documentation needs of the consultant pharmacist’s recommendations.</p>
+
+<p>The consultant pharmacist recommendations as reported in the Consultation Note (using either or both C-CDA or FHIR) potentially provide medication-related input into the patient’s care plan goals, health concerns and interventions. The Pharmacist Consultation Note is integral to the development and maintenance of the LTPAC resident’s longitudinal care plan.</p>
+
 
 
 
@@ -200,7 +272,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="">NCPDP/HL7</a>.  Package pharm-consult-note#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 1, 2022 16:39-0700">2022-06-01</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="">NCPDP/HL7</a>.  Package pharm-consult-note#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 2, 2022 15:57-0700">2022-06-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

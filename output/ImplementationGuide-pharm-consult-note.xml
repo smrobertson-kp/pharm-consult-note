@@ -11,7 +11,7 @@
   <name value="pharmconsultnote"/>
   <title value="Pharmacist Consultation Note"/>
   <status value="draft"/>
-  <date value="2022-06-01T16:39:51-07:00"/>
+  <date value="2022-06-02T15:57:08-07:00"/>
   <publisher value="NCPDP/HL7"/>
   <description value="Constraints"/>
   <packageId value="pharm-consult-note"/>
@@ -228,6 +228,11 @@
       <page>
         <nameUrl value="index.html"/>
         <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="use-cases.html"/>
+        <title value="Use Cases"/>
         <generation value="markdown"/>
       </page>
     </page>
