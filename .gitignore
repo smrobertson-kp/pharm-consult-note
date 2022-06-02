@@ -4,3 +4,9 @@ Thumbs.db
 /input-cache
 /temp
 /template
+/_gencontinuous.bat
+/_gencontinuous.sh
+/_genonce.bat
+/_genonce.sh
+/_updatePublisher.bat
+/_updatePublisher.sh
