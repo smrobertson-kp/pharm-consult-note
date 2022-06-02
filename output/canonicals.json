@@ -1,0 +1,16 @@
+[
+  {
+    "id": "pharm-consult-note",
+    "type": "ImplementationGuide",
+    "url": "http://github.com/HL7/pharm-consult-note/ImplementationGuide/pharm-consult-note",
+    "version": "0.1.0",
+    "name": "pharmconsultnote"
+  },
+  {
+    "id": "MyPatient",
+    "type": "StructureDefinition",
+    "url": "http://github.com/HL7/pharm-consult-note/StructureDefinition/MyPatient",
+    "version": "0.1.0",
+    "name": "MyPatient"
+  }
+]
